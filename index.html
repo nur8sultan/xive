@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>xive</title>
+
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="">About us</a></li>
+					<li><a href="">Features</a></li>
+					<li><a href="">Hosting</a></li>
+					<li><a href="">Calculator</a></li>
+					<li><a href="">Product</a></li>
+					<li><a href="">Media</a></li>
+					<li><a href="">Team</a></li>
+					<li><a href="">Contacts</a></li>
+					<li><a href="">FAQ</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<section class="main">
+			<div class="bg-hex"></div>
+			<div class="bg-hex"></div>
+
+			<div class="video-bg">
+				<div class="video-bg-in">
+					<div class="video-bg-in-in">
+						<div class="bg-on-video">
+							<img src="img/44.png" alt="">
+						</div>
+						<video autoplay  muted loop id="myVideo">
+						  <source src="video.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="content-header">
+					A turn-key ASIC/GPU hosting for <span class="orange-text">$0.045</span> per kw/h
+				</div>
+				<div class="content-body">
+					We are happy to provide hosting services for largescale international miners and investors.
+					<div class="slogan">
+						Legal. Reliable. Safe.
+					</div>
+				</div>
+				<div class="message-us">
+					Feel free to message us
+					<ul class="icons">
+						<li>
+							<a href="">
+								<img src="img/s1.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/s2.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/s3.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="header">About Xive Mining</div>
+			<div class="post-header">
+				We are happy to provide hosting services for largescale international miners and investors. We are reasonably priced and offer high quality infrastructure, safety and care for your precious equipment. We believe that every ASIC is just like a bee and needs to be placed in the Xive to bring maximum benefit. 
+			</div>
+			<div class="items">
+				<div class="item">
+					<div class="item-pic">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="item-header">Transportantion</div>
+					<div class="item-text">
+						The process of mining equipment transportation done easily by signing a contract with us.  We will ensure smooth and quick process of obtaining necessary agreements, transportation, customs clearance, and further installment of the equipment in Kazakhstan for your comfort.  
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-pic">
+						<img src="img/22.png" alt="">
+					</div>
+					<div class="item-header">Instalation</div>
+					<div class="item-text">
+						Our company develops high quality data centres and mining containers with complete internal infrastructure. Our engineers developed fully automated mobile solutions with pre installed electricity, ventilation, internet, racks, fire detectors, as well as air pressure and temperature sensors.
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-pic">
+						<img src="img/33.png" alt="">
+					</div>
+					<div class="item-header">Solution</div>
+					<div class="item-text">
+						According to different established sources Kazakhstan is one of the best countries for mining operations in the world. Because of cheap electricity, relatively cold climate and high internet coverage. Xive is reliable partner in building mining business in Kazakhstan. 
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="features">
+			<div class="header">
+				<div class="line"></div>
+				<div class="header-text">Our Features</div>
+				<div class="line"></div>
+			</div>
+			<div class="items">
+				<div class="item">
+					<div class="item-pic">
+						<img src="img/111.png" alt="">
+					</div>
+					<div class="item-content">
+						<div class="item-header">
+							Customer oriented approach
+						</div>
+						<div class="content-item">
+							<div class="content-item-pic">
+								<img src="img/1.png" alt="">
+							</div>
+							<div class="content-item-text">
+								<div class="text-header">
+									Transparent
+								</div>
+								<div class="text-postheader">
+									Xive is a completely transparent company that foresees the obvious advantages of mining operations in Kazakhstan
+								</div>
+							</div>
+						</div>
+						<div class="content-item">
+							<div class="content-item-pic">
+								<img src="img/2.png" alt="">
+							</div>
+							<div class="content-item-text">
+								<div class="text-header">
+									Accessible
+								</div>
+								<div class="text-postheader">
+									Xive is a completely transparent company that foresees the obvious advantages of mining operations in Kazakhstan
+								</div>
+							</div>
+						</div>
+						<div class="content-item">
+							<div class="content-item-pic">
+								<img src="img/3.png" alt="">
+							</div>
+							<div class="content-item-text">
+								<div class="text-header">
+									Individually tailored
+								</div>
+								<div class="text-postheader">
+									Xive is a completely transparent company that foresees the obvious advantages of mining operations in Kazakhstan
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="info" id="infoApp">
+			<div class="left">
+				<div class="pic">
+					<img src="img/info.png" alt="">
+				</div>
+			</div>
+			<div class="right">
+				<div class="items">
+					<div class="item" v-for="i in gg">
+						<div class="dot"></div>
+						<div class="text">{{ i.item }}</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="calc"></section>
+
+		<section class="products">
+			<div class="header">
+				<div class="line"></div>
+				<div class="header-text">Our Products</div>
+				<div class="line"></div>
+			</div>
+			<div class="main-item">
+				<div class="left">
+					<div class="num">01</div>
+					<div class="head">Turn-in key</div>
+					<div class="text">
+						Turn-in key approach allows Hive Mining provide all-inclusive, easy, and quick services with complete transparency. Our task is to provide the lowest mining costs with a maximum level of comfort. Descreet attitude towards our work will ensure complete understanding between Hive Mining and the clients. 
+					</div>
+				</div>
+				<div class="right">
+					<div class="items">
+						<div class="item">
+							<div class="dot"></div>
+							<div class="text">
+								Developed data centers,equipped to maximize efficiency.
+							</div>
+						</div>
+						<div class="item">
+							<div class="dot"></div>
+							<div class="text">
+								Ensuring the most effective mining and management 24/7
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="other-items">
+				<div class="item">
+					<div class="num">02</div>
+					<div class="head">Equipment sales</div>
+					<div class="text">
+						We can procure equipment for you and deliver to your destination
+					</div>
+				</div>
+				<div class="divide-line">
+					<div class="white-part"></div>
+					<div class="orange-part"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="media">
+			<div class="items">
+				<div class="item">
+					<img src="img/media3.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/media1.png" alt="">
+				</div>
+				<div class="item">
+					<img src="img/media2.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="header">
+				<div class="line"></div>
+				<div class="header-text">Contacts</div>
+				<div class="line"></div>
+			</div>
+			<div class="left">
+				<form action="">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+					<input type="text">
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-text">
+				2018 © Xive Mining  |  All Rights Reserved
+			</div>
+		</footer>
+		
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="js/features.js"></script>
+		<script src="js/info.js"></script>
+	</body>
+</html>
