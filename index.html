@@ -193,7 +193,7 @@
 
 		<section class="calc"></section>
 
-		<section class="products">
+		<section class="products" id="productsApp"> 
 			<div class="header">
 				<div class="line"></div>
 				<div class="header-text">Our Products</div>
@@ -209,16 +209,10 @@
 				</div>
 				<div class="right">
 					<div class="items">
-						<div class="item">
+						<div class="item" v-for="item in set01">
 							<div class="dot"></div>
 							<div class="text">
-								Developed data centers,equipped to maximize efficiency.
-							</div>
-						</div>
-						<div class="item">
-							<div class="dot"></div>
-							<div class="text">
-								Ensuring the most effective mining and management 24/7
+								{{ item }}
 							</div>
 						</div>
 					</div>
@@ -226,16 +220,14 @@
 			</div>
 
 			<div class="other-items">
-				<div class="item">
-					<div class="num">02</div>
-					<div class="head">Equipment sales</div>
-					<div class="text">
-						We can procure equipment for you and deliver to your destination
-					</div>
-				</div>
-				<div class="divide-line">
-					<div class="white-part"></div>
-					<div class="orange-part"></div>
+				<div class="item" v-for="item in gg">
+					<div class="num">{{ item.num }}</div>
+					<div class="head">{{ item.header }}</div>
+					<div class="text">{{ item.text }}</div>
+					<div class="divide-line">
+						<div class="white-part"></div>
+						<div class="orange-part"></div>
+					</div>	
 				</div>
 			</div>
 		</section>
@@ -279,5 +271,6 @@
 		<script src="https://unpkg.com/vue/dist/vue.js"></script>
 		<script src="js/features.js"></script>
 		<script src="js/info.js"></script>
+		<script src="js/products.js"></script>
 	</body>
 </html>

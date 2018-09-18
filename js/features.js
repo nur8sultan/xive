@@ -1,8 +1,5 @@
 var data = {
 	features: [
-		// {
-		// 	pic
-		// }
 		{
 			header: 'Transparent',
 			pic: 'img/1.png',

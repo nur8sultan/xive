@@ -348,8 +348,9 @@ header {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	.left {
+		width: 50%;
 		.pic{
 			img{}
 		}
@@ -357,13 +358,21 @@ header {
 	.right {
 		color: #fff;
 		.items {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-wrap: wrap;
 			.item {
 				display: -webkit-flex;
 				display: -moz-flex;
 				display: -ms-flex;
 				display: -o-flex;
 				display: flex;
-				align-items: center;
+				align-items: flex-start;
+				width: 30%;
+				margin: 10px 20px;
 				.dot {
 					height: 5px;
 					width: 5px;
@@ -377,7 +386,7 @@ header {
 }
 
 .products {
-	height: 70vh;
+	height: 80vh;
 	background-color: $grey;
 	color: #fff;
 	.header {
@@ -388,6 +397,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 50px 0;
 		.line {
 			height: 7px;
 			width: 70px;
@@ -428,20 +438,26 @@ header {
 		.right {
 			width: 50%;
 			.items {
-				width: 50%;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				flex-wrap: wrap;
 				.item {
+					width: 50%;
 					display: -webkit-flex;
 					display: -moz-flex;
 					display: -ms-flex;
 					display: -o-flex;
 					display: flex;
-					align-items: center;
+					align-items: flex-start;
 					.dot {
 						width: 9px;
 						height: 9px;
 						border-radius: 9px;
 						background-color: $orange;
-						margin: 0 20px;
+						margin: 10px 15px;
 					}
 					.text {
 						width: 80%;
@@ -456,10 +472,12 @@ header {
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		align-content: center;
-		align-items: center;
+		align-items: flex-start;
+		justify-content: center;
 		.item {
 			width: 200px;
+			position: relative;
+			margin: 30px;
 			.num {
 				font-size: 30px;
 				color: $orange;
@@ -467,10 +485,14 @@ header {
 			}
 			.head {
 				font-weight: 600;
+				margin: 15px 0;
 			}
 			.text {}
 		}
 		.divide-line {
+			position: absolute;
+			top: 0;
+			right: 0;
 			.white-part {
 				width: 2px;
 				height: 45px;
@@ -478,7 +500,7 @@ header {
 			}
 			.orange-part {
 				width: 2px;
-				height: 95px;
+				height: 135px;
 				background-color: $orange;
 			}
 		}
@@ -557,8 +579,8 @@ footer {
 header,
 .main,
 .about,
-.features,
-// .info,
+// .features,
+.info,
 .products,
 .media,
 .contacts,
