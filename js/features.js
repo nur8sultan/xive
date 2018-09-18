@@ -1,20 +1,39 @@
 var data = {
 	features: [
 		{
-			header: 'Transparent',
+			hexpic: 'img/111png',
+			mainhead: 'Customer oriented approach',
+			positionLeft: true;
+		},
+		{
+			hexpic: 'img/111png',
+			mainhead: 'Transportation',
+			positionLeft: false;
+		},
+		{
+			hexpic: 'img/111png',
+			mainhead: 'Saving up to 80% on customs clearance',
+			positionLeft: true;
+		},
+	],
+	content: [
+		{
 			pic: 'img/1.png',
+			header: 'Transparent',
 			text: 'Xive is a completely transparent company that foresees the obvious advantages of mining operations in Kazakhstan',
 		},
 		{
-			header: 'sdfsdf',
-			pic: 'img/2.png',
-			text: 'asdadasd',
+			pic: 'img/1.png',
+			header: 'Transparent',
+			text: 'Xive is a completely transparent company that foresees the obvious advantages of mining operations in Kazakhstan',
+		},
+		{
+			pic: 'img/1.png',
+			header: 'Transparent',
+			text: 'Xive is a completely transparent company that foresees the obvious advantages of mining operations in Kazakhstan',
 		},
 	],
-	headers: {
-		'Customer oriented approach',
-		'Transportation'
-	},
+	counter: 1;
 }
 var featuresApp = new Vue({
 	el: '#featuresApp',
